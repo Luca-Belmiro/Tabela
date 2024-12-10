@@ -1,0 +1,96 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    gap: 5px;
+    max-width: 1600px;
+    margin: auto;
+    background-color: #fff;
+    padding: 10px;
+}
+.element {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px 5px;
+    font-size: 0.8em;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.element.metals-alcalinos-terrosos { background-color: #dcc124; }
+.element.metals-alcalinos { background-color: #f0ad40; }
+.element.transition-metals { background-color: #e82121ca; }
+.element.nonmetals { background-color: #7fffd4; }
+.element.semi-metals { background-color: #06aa73; }
+.element.noble-gases { background-color: #ffb6c1; }
+.element.metalloids { background-color: #c22ac2; }
+.element.lanthanides { background-color: #f4a460; }
+.element.actinides { background-color: #dda0dd; }
+.element.halogens { background-color: #1de5ff; }
+.symbol {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.atomic-number {
+    font-size: 13px;
+    color: #000000;
+    text-align: left;
+}
+.placeholder {
+    background-color: transparent;
+    border: none;
+}
+.element:hover {
+    transform: scale(1.3);
+  }
+
+  .tooltip {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    z-index: 1000;
+    font-size: 14px;
+    max-width: 200px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+  }
+  .alkali { background-color: #dcc124; }
+  .alkaline-earth { background-color: #f0ad40; }
+  .transition-metal { background-color: #e82121ca; }
+  .metalloid { background-color: #c22ac2; }
+  .nonmetal { background-color: #7fffd4; }
+  .halogen { background-color: #1de5ff; }
+  .noble-gas { background-color: #ffb6c1; }
+  .lanthanide { background-color: #f4a460; }
+  .actinide { background-color: #dda0dd; }
